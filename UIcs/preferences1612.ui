@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Set_Preferenses_Window</class>
+ <widget class="QDialog" name="Set_Preferenses_Window">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>879</width>
+    <height>570</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Preferences</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="5" column="3" colspan="3">
+    <widget class="QComboBox" name="HumanGH_cb">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>21</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="3">
+    <widget class="QLabel" name="label_7">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>16</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Animal DEG</string>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="1" colspan="2">
+    <widget class="QPushButton" name="btn_selectall_human_features">
+     <property name="maximumSize">
+      <size>
+       <width>121</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Select all</string>
+     </property>
+    </widget>
+   </item>
+   <item row="11" column="1">
+    <widget class="QLabel" name="label_9">
+     <property name="maximumSize">
+      <size>
+       <width>115</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Overexpression effect</string>
+     </property>
+    </widget>
+   </item>
+   <item row="13" column="3">
+    <widget class="QLabel" name="label_12">
+     <property name="text">
+      <string>Padj_value</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="6" rowspan="9">
+    <widget class="QTextEdit" name="chosen_text_Animals">
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:9.07087pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9.07087pt;&quot;&gt;Animal:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="6">
+    <widget class="QPushButton" name="bth_show_selected">
+     <property name="text">
+      <string>Show selected preferences</string>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="5">
+    <widget class="QPushButton" name="btn_selectall_Animal_DEG">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Select all</string>
+     </property>
+    </widget>
+   </item>
+   <item row="17" column="3" alignment="Qt::AlignBottom">
+    <widget class="QPushButton" name="btn_cancel_SPW">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Cancel</string>
+     </property>
+    </widget>
+   </item>
+   <item row="14" column="1">
+    <widget class="QPlainTextEdit" name="pvalue_board_num">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>115</width>
+       <height>20</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="3">
+    <widget class="QLabel" name="label_4">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>16</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Tissue</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="3" colspan="2">
+    <widget class="QPushButton" name="btn_clear_Human_gene_homolog">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Clear</string>
+     </property>
+    </widget>
+   </item>
+   <item row="14" column="3" colspan="2">
+    <widget class="QComboBox" name="adjvalue_cb"/>
+   </item>
+   <item row="9" column="0" colspan="3">
+    <widget class="QComboBox" name="Human_features_cb">
+     <property name="maximumSize">
+      <size>
+       <width>249</width>
+       <height>16777215</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1" colspan="2">
+    <widget class="QPushButton" name="btn_selectall_Columns_cb">
+     <property name="maximumSize">
+      <size>
+       <width>121</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Select all</string>
+     </property>
+    </widget>
+   </item>
+   <item row="14" column="5">
+    <widget class="QPlainTextEdit" name="adjvalue_board_num">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>20</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QPushButton" name="btn_clear_Columns_cb">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Clear</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="0">
+    <widget class="QLabel" name="label_5">
+     <property name="text">
+      <string>Human features</string>
+     </property>
+    </widget>
+   </item>
+   <item row="11" column="0">
+    <widget class="QLabel" name="label_8">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Underexpression effect</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="7" rowspan="9">
+    <widget class="QPlainTextEdit" name="chosen_text_Tissue">
+     <property name="plainText">
+      <string>Tissue:
+</string>
+     </property>
+    </widget>
+   </item>
+   <item row="17" column="6">
+    <widget class="QPlainTextEdit" name="chosen_text_Animal_DEG">
+     <property name="plainText">
+      <string>Animal DEGs:
+</string>
+     </property>
+    </widget>
+   </item>
+   <item row="14" column="0">
+    <widget class="QComboBox" name="pvalue_cb"/>
+   </item>
+   <item row="9" column="3" colspan="3">
+    <widget class="QComboBox" name="Animal_DEG_cb">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>21</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="5">
+    <widget class="QPushButton" name="btn_selectall_Human_gene_homolog">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Select all</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="3" colspan="3">
+    <widget class="QLabel" name="label_6">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>16</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Human gene-homolog</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0" colspan="3">
+    <widget class="QComboBox" name="Columns_cb">
+     <property name="maximumSize">
+      <size>
+       <width>249</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="insertPolicy">
+      <enum>QComboBox::InsertAtBottom</enum>
+     </property>
+     <property name="sizeAdjustPolicy">
+      <enum>QComboBox::AdjustToContentsOnFirstShow</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QLabel" name="label_3">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>16</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Animal</string>
+     </property>
+    </widget>
+   </item>
+   <item row="12" column="1">
+    <widget class="QComboBox" name="Overexpression_sign">
+     <property name="maximumSize">
+      <size>
+       <width>115</width>
+       <height>21</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="13" column="0">
+    <widget class="QLabel" name="label_11">
+     <property name="text">
+      <string>P_value</string>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="3" colspan="2">
+    <widget class="QPushButton" name="btn_clear_Animal_DEG">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Clear</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="3" colspan="2">
+    <widget class="QPushButton" name="btn_clear_Tissue">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Clear</string>
+     </property>
+    </widget>
+   </item>
+   <item row="17" column="7">
+    <widget class="QPlainTextEdit" name="chosen_text_Human_gene_homolog">
+     <property name="plainText">
+      <string>Human gene-homologs:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="0">
+    <widget class="QPushButton" name="btn_clear_human_features">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Clear</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="3" colspan="3">
+    <widget class="QComboBox" name="Tissue_cb">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>21</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="6" rowspan="7" colspan="2">
+    <widget class="QPlainTextEdit" name="chosen_text_Human_feature">
+     <property name="plainText">
+      <string>Human features:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="17" column="5" alignment="Qt::AlignBottom">
+    <widget class="QPushButton" name="btn_OK_SPW">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>OK</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="5">
+    <widget class="QPushButton" name="btn_selectall_Tissue">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Select all</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="1" colspan="2">
+    <widget class="QPushButton" name="btn_selectall_Animal">
+     <property name="maximumSize">
+      <size>
+       <width>121</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Select all</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="0">
+    <widget class="QPushButton" name="btn_clear_Animal">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Clear</string>
+     </property>
+    </widget>
+   </item>
+   <item row="11" column="3" colspan="2">
+    <widget class="QLabel" name="label_10">
+     <property name="text">
+      <string>Homology</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0" colspan="4">
+    <widget class="QLabel" name="label">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>16</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Welcome to SNP TATA Z-Tester Database</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::RichText</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="12" column="3" colspan="3">
+    <widget class="QComboBox" name="Homology_cb"/>
+   </item>
+   <item row="5" column="0" colspan="3">
+    <widget class="QComboBox" name="Animal_cb">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>249</width>
+       <height>21</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="12" column="0">
+    <widget class="QComboBox" name="Underexpression_sign">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>21</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0" colspan="3">
+    <widget class="QLabel" name="label_2">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>16</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Choose columns</string>
+     </property>
+    </widget>
+   </item>
+   <item row="15" column="1" rowspan="3">
+    <spacer name="verticalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
